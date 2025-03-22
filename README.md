@@ -12,19 +12,7 @@ This project implements a BDD-style API testing framework using REST Assured, Te
 - BDD Framework
 - Excel (Apache POI)
 - JSON parsing libraries
--  Log4j2
-
-## Features Tested
-- Authentication flows
-- Cookie handling
-- File upload operations
-- Dynamic API requests
-- Data-driven testing using:
-  - CSV files
-  - Excel files
-  - JSON files
-- CRUD operations (GET, POST, PUT, PATCH)
-- End-to-end API flows
+- Log4j2
 
 ### API Operations
 1. **GET Requests**
@@ -52,69 +40,45 @@ This project implements a BDD-style API testing framework using REST Assured, Te
    - Complete API workflows
    - Chained API requests
 
-### Data-Driven Testing
-- CSV file-based testing
-- Excel file-based testing
-- JSON file-based testing
-- Dynamic data generation
+## Features Tested
+- Authentication flows
+- Cookie handling
+- File upload operations
+- Dynamic API requests
+- Data-driven testing using:
+  - CSV files
+  - Excel files
+  - JSON files
+- CRUD operations (GET, POST, PUT, PATCH)
+- End-to-end API flows
 
 ## Project Structure
+
+```
 RestAssuredAPITestingBDD/
 ├── src/
 │   ├── main/java/
-│   └── test/
-│       ├── java/
-│       │   └── com.testautomation.apitesting/
-│       │       ├── pojos/
-│       │       │   ├── Booking.java
-│       │       │   └── BookingDates.java
-│       │       ├── tests/
-│       │       │   ├── AllureReportGeneration.java
-│       │       │   ├── BasicAuth.java
-│       │       │   ├── Cookies.java
-│       │       │   ├── CreateAPIRequestDynamically.java
-│       │       │   ├── DataDrivenTestingUsingCSVFile.java
-│       │       │   ├── DataDrivenTestingUsingExcelFile.java
-│       │       │   ├── DataDrivenTestingUsingJsonFile.java
-│       │       │   ├── EndToEndAPITest.java
-│       │       │   ├── FileUpload.java
-│       │       │   ├── GetAPIRequest.java
-│       │       │   ├── PatchAPIRequest.java
-│       │       │   ├── PostAPIRequestUsingFile.java
-│       │       │   ├── PostAPIRequestUsingJSONObject.java
-│       │       │   ├── PostAPIRequestUsingPojos.java
-│       │       │   ├── PostAPIRequestUsingUID.java
-│       │       │   └── PutAPIRequest.java
-│       │       └── utils/
-│       │           ├── BaseTest.java
-│       │           ├── ExtentReportManager.java
-│       │           ├── FileNameConstants.java
-│       │           └── RestAPIHelper.java
-│       └── resources/
-│           ├── ~$TestRunner.xlsx
-│           ├── exceltestdata.xlsx
-│           ├── expectedjsonschema.txt
-│           ├── log4j2.properties
-│           ├── patchapirequestbody.txt
-│           ├── postapirequestbody.txt
-│           ├── postapirequestbodydynamic.txt
-│           ├── putapirequestbody.txt
-│           ├── testdatacsv.csv
-│           ├── testdatajson.json
-│           ├── TestRunner.xlsx
-│           └── tokenapirequestbody.txt
-└── suites/
-    ├── AllureReportapitest.xml
-    ├── Datadriventestingusingcsv.xml
-    ├── Datadriventestingusingexcel.xml
-    ├── Datadriventestingusingjson.xml
-    ├── ExtentReportCreateAPIRequestDynamicallyE2Etest.xml
-    ├── PostAPIRequestUsingJSONFile.xml
-    ├── PostAPIRequestUsingJSONObject.xml
-    ├── PostAPIRequestUsingPojo.xml
-    ├── PostAPIRequestUsingUUID.xml
-    ├── Restassuredapitest.xml
-    └── Restassuredapitest2.xml
+│   ├── test/java/
+│   │   ├── com.testautomation.apitesting.pojos/
+│   │   │   ├── Booking.java
+│   │   │   └── BookingDates.java
+│   │   ├── com.testautomation.apitesting.tests/
+│   │   │   ├── AllureReportGeneration.java
+│   │   │   ├── BasicAuth.java
+│   │   │   ├── DataDrivenTesting*.java
+│   │   │   ├── EndToEndAPITest.java
+│   │   │   └── [Other test files]
+│   │   └── com.testautomation.apitesting.utils/
+│   │       ├── BaseTest.java
+│   │       ├── ExtentReportManager.java
+│   │       └── RestAPIHelper.java
+│   └── test/resources/
+│       ├── TestRunner.xlsx
+│       ├── testdata.csv
+│       ├── testdatajson.json
+│       └── [Other resource files]
+└── [Project configuration files]
+```
 
 ### Key Components
 
