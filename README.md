@@ -132,6 +132,12 @@ RestAssuredAPITestingBDD/
    - Allure reports: `allure serve target/allure-results`
    - Test output: Check `test-output` directory
    - Logs: Check `logs` directory
+  
+   **Test Execution Report:**
+   ![Image](https://github.com/user-attachments/assets/b4798a62-9720-429b-9be3-7212bce9f261)
+   ![Image](https://github.com/user-attachments/assets/ce4da854-351d-410d-af81-bbad62f9ce00)
+   ![Image](https://github.com/user-attachments/assets/1ed51c74-3a75-4fb0-8535-174f6f22f45c)
+   ![Image](https://github.com/user-attachments/assets/925cbe21-61e1-4a11-9e03-550bbe1cb3b9)
 
 ## Test Execution Notes
 - Tests can be run in parallel (configured in TestNG)
