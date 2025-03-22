@@ -1,7 +1,7 @@
 # REST Assured API Testing BDD Framework
 
 ## Overview
-his project implements a BDD-style API testing framework using REST Assured, TestNG, and Allure reporting. It demonstrates various approaches to API testing, including data-driven testing using different file formats (CSV, Excel, JSON) and different ways of handling request payloads.
+This project implements a BDD-style API testing framework using REST Assured, TestNG, and Allure reporting. It demonstrates various approaches to API testing, including data-driven testing using different file formats (CSV, Excel, JSON) and different ways of handling request payloads.
 
 ## Tech Stack
 - Java 17
